@@ -11,3 +11,4 @@ Foi produzido este material que trata dos principais conceitos básicos referent
 1. [DevOps](introconce/DevOps.md)
 2. [Continuous Integration](introconce/CI.md)
 3. [Continuous delivery](introconce/CD.md)
+4. [Exercicios](exerc/README.md)
