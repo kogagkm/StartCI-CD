@@ -98,3 +98,6 @@ Repare também que o proprio github esta criando um arquivo dentro de duas pasta
 
 ![Script](./imagens/scriptactions.png)
 
+Apos a criação vá novamente ate a aba Actions no gihub e então veja o workflow executado.
+
+![Workflow](./imagens/workflow.png)
