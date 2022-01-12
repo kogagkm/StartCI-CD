@@ -145,7 +145,7 @@ Este CI deve ter as seguintes steps:
 * O nome do workflow deve ser 'Container CI'
 * Ele so deve ser executado na branch build que você criar no github. Neste cenário nós não vamos utilizar a branch main
 * Utilize o ubuntu como opção para executar a 'job'
-* Subir a imagem deste container no github
+* Subir a imagem deste container no Docker Hub
 
 [Documentação oficial do Github Actions](https://docs.github.com/pt/actions/learn-github-actions)
 
