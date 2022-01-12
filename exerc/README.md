@@ -101,3 +101,51 @@ Repare também que o proprio github esta criando um arquivo dentro de duas pasta
 Apos a criação vá novamente ate a aba Actions no gihub e então veja o workflow executado.
 
 ![Workflow](./imagens/workflow.png)
+
+# Desafio
+
+Crie um pipeline que faça o build de uma aplicação e esse build gere uma imagem docker e fique disponibilizado no docker hub.
+
+Neste cenário deve ser utilizado os seguintes códigos em seus respectivos arquivos:
+
+Arquivo Dockerfile:
+
+```
+FROM nginx:alpine
+COPY .		/usr/share/nginx/html/
+COPY .		/var/www/html/
+```
+
+Arquivo index.html
+
+```
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+<body>
+
+    <h1>CI</h1>
+    <h2>app111111</h2>
+</body>
+</html>
+```
+
+O arquivo Dockerfile irá gerar uma imagem baseado nginx e dentro dele será inserido o arquivo index.html que contém uma página.
+
+Este projeto deve estar disponibilizado no github e nele você deve utilizar o Github Actions para a construção dos nossos pipelines.
+
+Este CI deve ter as seguintes steps:
+
+* O nome do workflow deve ser 'Container CI'
+* Ele so deve ser executado na branch build que você criar no github. Neste cenário nós não vamos utilizar a branch main
+* Utilize o ubuntu como opção para executar a 'job'
+* Subir a imagem deste container no github
+
+[Documentação oficial do Github Actions](https://docs.github.com/pt/actions/learn-github-actions)
+
