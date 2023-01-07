@@ -33,3 +33,4 @@ try:
 
 except:
   print("Couldn't extract Brazil vaccines datas") 
+
